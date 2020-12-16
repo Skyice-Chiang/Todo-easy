@@ -1,0 +1,89 @@
+@import "reset";
+//變數設定
+
+//字型大小
+$font-l: 30px;
+$font-m : 20px;
+$font-n : 16px;
+$font-s : 14px;
+//顏色
+$red :rgb(219, 105, 105);
+$orange : rgb(241, 170, 103);
+$yellow :rgb(219, 192, 105);
+$green :rgb(175, 219, 105);
+$blue :rgb(105, 177, 219);
+$greenblue :rgb(105, 145, 219);
+$purple :rgb(135, 105, 219);
+$pink :rgb(215, 105, 219);
+
+
+//style
+body{
+    font-family: "Microsoft JhengHei",sans-serif;
+}
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 600px;
+    background-color: rgb(240, 240, 233);
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    text-align: center;
+    color: $blue;
+    font-size: $font-l;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.task-input{
+    text-align: center;
+    margin: 20px 0;
+    input{
+        -webkit-appearance:none;
+        width: 80%;
+        height: 30px;
+        padding: 16px;
+        border: 1px solid $greenblue;
+        border-radius: 50px;
+        outline: none;
+        &:focus{
+            box-shadow: 2px 2px 5px rgba(0, 0, 0,0.2);
+        }
+    }
+    button{
+        font-family: "Microsoft JengHei";
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #FFF;
+        background-color: $blue;
+        display: inline-block;
+        -webkit-appearance:none;
+        padding: 20px 16px;
+        border: 2px solid #FFF;
+        border-radius: 50%;
+        outline: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0,0.3);
+        &:hover{
+            cursor: pointer;
+            color: $blue;
+            background-color: rgb(238, 225, 202);
+            border-color: $blue;
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+}
+
