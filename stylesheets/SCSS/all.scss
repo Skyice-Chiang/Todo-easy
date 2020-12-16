@@ -87,3 +87,105 @@ h1{
     }
 }
 
+.task-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    background-color: rgb(120, 170, 159);
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(219, 236, 233);
+    border-radius: 50px;
+    box-shadow: 2px 2px 0px rgb(92, 124, 109);
+    transition: all 0.2s;
+    &:hover{
+        background-color:  rgb(155, 206, 195);
+        transform: translateY(-2px);
+    }
+    input[type=checkbox]{
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+        margin-right: 10px;
+        -webkit-appearance: none;
+        vertical-align:middle;
+        outline: none;
+        margin-top:0;
+        background:#fff;
+        border: 1px solid #FFF;
+        border-radius: 50%;
+        min-height: 12px;
+        min-width: 12px;
+        position: relative;
+        &:checked{
+            background: #3190e8;
+            &:after{
+                content: '';
+                top: 28%;
+                left: 28%;
+                position: absolute;
+                background: transparent;
+                border: #fff solid 2px;
+                border-top: none;
+                border-right: none;
+                height: 6px;
+                width: 10px;
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg); 
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .task-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button{
+        display: block;
+        -webkit-appearance: none;
+        outline: none;
+        color: #FFF;
+        background-color: rgb(219, 105, 105);
+        border:1px solid rgb(240, 155, 155);
+        border-radius: 4px;
+        padding: 4px 6px;
+        &:hover{
+            cursor: pointer;
+            color:rgb(255, 250, 236);
+            background-color: rgb(163, 71, 10);
+            border:1px solid #FFF;
+        }
+    }
+    label{
+        display: block;
+        width: 100%;
+    }
+}
+
+.task-manager{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    li{
+        text-align: center;
+        width: 30%;
+        color: #FFF;
+        background-color: $blue;
+        border: 1px solid #FFF;
+        border-radius: 20px;
+        padding: 10px 0;
+        box-shadow: 2px 2px 0px rgb(58, 101, 136);
+        transition: all 0.2s;
+        &:hover{
+            cursor: pointer;
+            color: rgb(58, 101, 136);
+            background-color: rgb(157, 204, 226);
+            transform: translateY(-2px);
+        }
+    }
+}

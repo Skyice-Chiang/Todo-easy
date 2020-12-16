@@ -130,3 +130,113 @@ h1 {
 .task-input button:active {
   transform: scale(0.9);
 }
+
+.task-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+  background-color: #78aa9f;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #dbece9;
+  border-radius: 50px;
+  box-shadow: 2px 2px 0px #5c7c6d;
+  transition: all 0.2s;
+}
+
+.task-style:hover {
+  background-color: #9bcec3;
+  transform: translateY(-2px);
+}
+
+.task-style input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  outline: none;
+  margin-top: 0;
+  background: #fff;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  min-height: 12px;
+  min-width: 12px;
+  position: relative;
+}
+
+.task-style input[type=checkbox]:checked {
+  background: #3190e8;
+}
+
+.task-style input[type=checkbox]:checked:after {
+  content: '';
+  top: 28%;
+  left: 28%;
+  position: absolute;
+  background: transparent;
+  border: #fff solid 2px;
+  border-top: none;
+  border-right: none;
+  height: 6px;
+  width: 10px;
+  transform: rotate(-45deg);
+}
+
+.task-style .task-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-style button {
+  display: block;
+  -webkit-appearance: none;
+  outline: none;
+  color: #FFF;
+  background-color: #db6969;
+  border: 1px solid #f09b9b;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.task-style button:hover {
+  cursor: pointer;
+  color: #fffaec;
+  background-color: #a3470a;
+  border: 1px solid #FFF;
+}
+
+.task-style label {
+  display: block;
+  width: 100%;
+}
+
+.task-manager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.task-manager li {
+  text-align: center;
+  width: 30%;
+  color: #FFF;
+  background-color: #69b1db;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  padding: 10px 0;
+  box-shadow: 2px 2px 0px #3a6588;
+  transition: all 0.2s;
+}
+
+.task-manager li:hover {
+  cursor: pointer;
+  color: #3a6588;
+  background-color: #9dcce2;
+  transform: translateY(-2px);
+}
